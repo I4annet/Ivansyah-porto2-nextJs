@@ -20,9 +20,9 @@ export default function Sidebar() {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   return (
-    <div className="h-[40vh] w-14 bg-gray-900 text-white 
+       <div className="fixed top-1/2 -translate-y-1/2 h-[40vh] w-14 bg-gray-900 text-white 
                     flex flex-col items-center  
-                    rounded-tr-2xl rounded-br-2xl">
+                    rounded-tr-2xl rounded-br-2xl z-10">
 
       <nav className="flex flex-col gap-6 mt-6">
         {navItems.map((item, index) => (
