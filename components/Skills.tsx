@@ -20,7 +20,7 @@ const skills = [
   {/* SKILLS */}
   export default function Skills() {
     return (
-       <section className="h-screen flex flex-col justify-center px-12">
+       <section id="skills" className="h-screen flex flex-col justify-center px-12">
           <h2 className="text-4xl font-bold mb-6">Skills</h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

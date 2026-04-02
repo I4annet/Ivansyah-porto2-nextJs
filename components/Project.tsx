@@ -1,7 +1,7 @@
 {/* PROJECTS */}
 export default function Projects() {
     return (
-<section className="h-screen flex flex-col justify-center px-12">
+<section id="projects" className="h-screen flex flex-col justify-center px-12">
           <h2 className="text-4xl font-bold mb-6">Projects</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[1, 2, 3].map((item) => (
