@@ -9,7 +9,6 @@ import {
   faFolderOpen,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-import { label } from "framer-motion/m";
 
 const navItems = [
   { icon: faHome, label : "home", },
@@ -54,9 +53,9 @@ export default function Sidebar() {
   }, []);
 
   return (
-       <div className="fixed top-1/2 -translate-y-1/2 h-[45vh] w-14 bg-gray-900 text-white 
-                    flex flex-col items-center  
-                    rounded-tr-3xl rounded-br-3xl z-1">
+       <div className="hidden md:flex fixed top-1/2 -translate-y-1/2 h-[45vh] w-14 bg-gray-900 text-white 
+                    flex-col items-center  
+                    rounded-tr-3xl rounded-br-3xl z-10">
 
      <nav className="flex flex-col gap-6 mt-6">
         {navItems.map((item, index) => (
