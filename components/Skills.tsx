@@ -10,6 +10,7 @@ import {
   faGitAlt,
   faTailwindCss,
   faLaravel,
+  faFlutter,
 } from "@fortawesome/free-brands-svg-icons";
 
 const skills = [
@@ -22,6 +23,7 @@ const skills = [
   { name: "Next.js", icon: faReact, color: "text-cyan-800" },
   { name: "TypeScript", icon: faJs, color: "text-blue-600" },
   { name: "Laravel", icon: faLaravel, color: "text-red-500" },
+  { name: "Flutter", icon: faFlutter, color: "text-blue-500" }
 ];
 
 export default function Skills() {

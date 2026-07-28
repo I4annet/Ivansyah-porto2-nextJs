@@ -22,11 +22,17 @@ const projects = [
     logo: "/sikat-bata.jpg",
     tech: "HTML · CSS · JavaScript · PHP ",
   },
-   {
+  {
     title: "Android Jawara",
     description: "A mobile application built with Flutter and Android Studio to streamline village administration, allowing residents to easily register new family members and sign up for community activities.",
     logo: "/android-jawara.png",
     tech: "Android Studio · Flutter",
+  },
+  {
+    title: "Molen King Application",
+    description: "A mobile application built with Flutter and Supabase to streamline business operations, including cashier transactions, inventory management, employee attendance, expense tracking, and sales reporting.",
+    logo: "/molen-king.png",
+    tech: "Flutter · Supabase",
   },
 ];
 
