@@ -16,17 +16,17 @@ export default function Hero() {
           <span className="h-2 w-2 rounded-full bg-sky-500 animate-pulse" />
           My Portfolio
         </p>
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight text-slate-900">
+        <h1 className="text-5xl md:text-6xl font-bold leading-tight text-slate-900 dark:text-slate-100">
           Hi, I&apos;m Ivansyah.
           <span className="text-sky-600"> Modern Web developer</span>
         </h1>
-        <p className="text-lg text-slate-600 max-w-xl leading-8">
+        <p className="text-lg text-slate-600 dark:text-slate-300 max-w-xl leading-8">
           I am a passionate web developer specializing in creating responsive and user-friendly applications. With experience in both frontend and backend technologies, I enjoy bringing ideas to life through clean and efficient code.
         </p>
         <div className="flex flex-wrap gap-3">
-          <span className="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700 shadow-sm">Next.js</span>
-          <span className="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700 shadow-sm">Tailwind CSS</span>
-          <span className="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700 shadow-sm">Laravel</span>
+          <span className="rounded-full bg-slate-100 dark:bg-slate-900 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 border border-slate-200/40 dark:border-slate-800/80 shadow-sm transition-colors duration-200">Next.js</span>
+          <span className="rounded-full bg-slate-100 dark:bg-slate-900 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 border border-slate-200/40 dark:border-slate-800/80 shadow-sm transition-colors duration-200">Tailwind CSS</span>
+          <span className="rounded-full bg-slate-100 dark:bg-slate-900 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 border border-slate-200/40 dark:border-slate-800/80 shadow-sm transition-colors duration-200">Laravel</span>
         </div>
       </motion.div>
 
@@ -36,13 +36,14 @@ export default function Hero() {
         transition={{ duration: 0.9, ease: "easeOut", delay: 0.15 }}
         className="relative flex-shrink-0"
       >
-        <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-sky-500 via-violet-500 to-blue-600 blur-2xl opacity-50" />
-        <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-2xl">
+        <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-sky-500 via-violet-500 to-blue-600 blur-2xl opacity-40 dark:opacity-30" />
+        <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-2xl">
           <Image
             src="/me.jpeg"
             alt="Hero profile"
             width={200}
             height={200}
+            priority
             className="h-auto w-full object-cover"
           />
         </div>

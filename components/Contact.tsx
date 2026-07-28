@@ -24,8 +24,8 @@ export default function Contact() {
         className="max-w-3xl mb-10"
       >
         <p className="text-sm uppercase tracking-[0.35em] text-sky-600 font-semibold mb-3">Contact</p>
-        <h2 className="text-4xl md:text-5xl font-bold text-slate-900">Let&apos;s work together</h2>
-        <p className="mt-4 text-lg text-slate-600 leading-8"></p>
+        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100">Let&apos;s work together</h2>
+        <p className="mt-4 text-lg text-slate-600 dark:text-slate-300 leading-8"></p>
       </motion.div>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -39,7 +39,7 @@ export default function Contact() {
             whileHover={{ y: -4 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: i * 0.1 }}
-            className="flex items-center gap-3 rounded-3xl border border-slate-200 bg-white px-6 py-4 text-slate-700 shadow-lg shadow-slate-100 transition hover:bg-sky-600 hover:text-white"
+            className="flex items-center gap-3 rounded-3xl border border-slate-200 dark:border-slate-800/80 bg-white dark:bg-slate-900/40 px-6 py-4 text-slate-700 dark:text-slate-300 shadow-lg shadow-slate-100/50 dark:shadow-none transition-all duration-300 hover:bg-sky-600 dark:hover:bg-sky-600 hover:text-white dark:hover:text-white"
           >
             <FontAwesomeIcon icon={contact.icon} className="text-xl" />
             <span className="font-medium">{contact.name}</span>
