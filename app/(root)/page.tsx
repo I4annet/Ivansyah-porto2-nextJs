@@ -10,7 +10,7 @@ import About from "@/components/About";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen bg-gray-100 text-blue-900 overflow-x-hidden">
+    <div className="flex min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 overflow-x-hidden transition-colors duration-300">
       <Sidebar />
 
       <main className="flex-1 md:ml-20">

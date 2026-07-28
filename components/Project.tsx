@@ -48,7 +48,7 @@ export default function Projects() {
         <p className="text-sm uppercase tracking-[0.35em] text-sky-600 font-semibold mb-3">
           Projects
         </p>
-        <h2 className="text-4xl md:text-5xl font-bold text-slate-900">Recent work</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100">Recent work</h2>
       </motion.div>
 
       <div className="grid gap-6 md:grid-cols-3">
@@ -59,18 +59,18 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: index * 0.12 }}
-            className="group rounded-[2rem] border border-slate-200 bg-white p-6 shadow-xl transition-transform hover:-translate-y-2 hover:shadow-2xl"
+            className="group rounded-[2rem] border border-slate-200 dark:border-slate-800/80 bg-white dark:bg-slate-900/40 p-6 shadow-xl dark:shadow-slate-950/20 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
           >
             <div className="flex items-center gap-4 mb-5">
-              <div className="rounded-3xl bg-slate-50 p-3 shadow-sm">
+              <div className="rounded-3xl bg-slate-50 dark:bg-slate-800 p-3 shadow-sm transition-colors duration-200">
                 <Image src={project.logo} alt={`${project.title} logo`} width={52} height={52} />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-slate-900">{project.title}</h3>
-                <p className="text-sm text-slate-500">{project.tech}</p>
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100">{project.title}</h3>
+                <p className="text-sm text-slate-500 dark:text-slate-400">{project.tech}</p>
               </div>
             </div>
-            <p className="text-sm leading-7 text-slate-600">{project.description}</p>
+            <p className="text-sm leading-7 text-slate-600 dark:text-slate-300">{project.description}</p>
           </motion.div>
         ))}
       </div>

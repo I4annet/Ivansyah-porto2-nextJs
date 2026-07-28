@@ -31,7 +31,7 @@ export default function Skills() {
     <section id="skills" className="min-h-screen flex flex-col justify-center px-6 md:px-12 py-12">
       <div className="mb-10">
         <p className="text-sm uppercase tracking-[0.35em] text-sky-600 font-semibold mb-3">Skills</p>
-        <h2 className="text-4xl md:text-5xl font-bold text-slate-900">What I use</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100">What I use</h2>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -41,11 +41,11 @@ export default function Skills() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
-            className="p-4 bg-white rounded-3xl shadow-lg border border-slate-200 hover:-translate-y-1 hover:shadow-2xl transition-transform"
+            className="p-4 bg-white dark:bg-slate-900/40 rounded-3xl shadow-lg dark:shadow-slate-950/20 border border-slate-200 dark:border-slate-800/80 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"
           >
             <div className="flex items-center gap-4">
               <FontAwesomeIcon icon={skill.icon} className={`text-3xl ${skill.color}`} />
-              <span className="font-medium text-slate-700">{skill.name}</span>
+              <span className="font-medium text-slate-700 dark:text-slate-300">{skill.name}</span>
             </div>
           </motion.div>
         ))}
