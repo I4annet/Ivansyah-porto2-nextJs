@@ -11,7 +11,7 @@ const contacts = [
   { name: "GitHub", icon: faGithub, href: "https://github.com/I4annet" },
   { name: "Download CV", icon: faFilePdf, href: "https://drive.google.com/file/d/1YjPX-kr29omt1DfCbBGMGoKotEkuv2he/view?usp=sharing" },
   { name: "Instagram", icon: faInstagram, href: "https://www.instagram.com/ivansyaheka_41/" },
-  // { name: "Whatsapp", icon: faWhatsapp, href: "https://wa.me/6285707092328" },
+  { name: "Whatsapp", icon: faWhatsapp, href: "https://wa.me/6285707092328" },
 ];
 
 export default function Contact() {
